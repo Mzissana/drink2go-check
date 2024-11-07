@@ -1,0 +1,77 @@
+.milk-radio {
+  margin: 0 0 10px;
+  padding: 0;
+  border: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 6px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 6px;
+    margin: 0 0 11px;
+  }
+}
+
+.milk-radio__item {
+  margin-bottom: 20px;
+}
+
+.milk-radio__title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  padding: 0 0 20px;
+}
+
+.milk-radio__label {
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 34px;
+}
+
+.milk-radio__mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  outline: 2px solid #bdbdbd;
+  cursor: pointer;
+  left: 2px;
+  top: 0;
+
+  @media (min-width: $desktop-width) {
+    top: 1px;
+  }
+}
+
+
+.radio-input:disabled + .milk-radio .milk-radio__mark {
+  outline: 2px solid #e2e2e2;
+}
+
+.radio-input:checked + .milk-radio .milk-radio__mark::after {
+  content: "";
+  position: absolute;
+  background-color: #7859cf;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 2px;
+  top: 2px;
+}
+
+.radio-input:focus + .milk-radio .milk-radio__mark {
+  outline: 2px solid #7859cf;
+}
+
+.radio-input:checked + .milk-radio .milk-radio__mark {
+  outline: 2px solid #7859cf;
+}

@@ -1,7 +1,32 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/page.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/slider-card.scss";
+@import "./blocks/slider-indicator.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/advantage.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/filter.scss";
+@import "./blocks/price-slider.scss";
+@import "./blocks/range-input.scss";
+@import "./blocks/milk-radio.scss";
+@import "./blocks/country-checkbox.scss";
+@import "./blocks/catalog-cards.scss";
+@import "./blocks/catalog-card.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/location.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";
+@import "../vendor/nouislider.css";

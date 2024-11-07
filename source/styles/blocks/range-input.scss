@@ -1,0 +1,31 @@
+.range-input {
+  width: 116px;
+  padding: 6px 8px;
+  font: inherit;
+  border: none;
+  outline: 2px solid  #9070ec;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    display: flex;
+  }
+}
+
+.range-input--min-price {
+  color: #bdbdbd;
+}
+
+.range-input--max-price {
+  color: $main-text-color;
+}

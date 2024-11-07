@@ -1,0 +1,45 @@
+.slider-indicator {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 56px;
+    left: 43%;
+    display: block;
+  }
+}
+
+.slider-indicator__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 10px 0;
+  }
+}
+
+.slider-indicator__button {
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+    width: 62px;
+    height: 4px;
+
+    &:focus {
+      background: rgba(120, 89, 207, 0.25);
+    }
+
+    &:hover {
+      background: rgba(120, 89, 207, 0.25);
+    }
+
+    &:active {
+      background-color: #7859cf;
+    }
+  }
+}
+
+.slider-indicator__button--active {
+  @media (min-width: $desktop-width) {
+    background-color: #7859cf;
+  }
+}

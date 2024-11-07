@@ -1,0 +1,98 @@
+.price-slider {
+  margin: 0 0 33px;
+  padding: 0;
+  border: none;
+
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+  }
+}
+
+.price-slider__title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  padding: 0 0 30px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 31px;
+  }
+}
+
+.price-slider__range-input {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  padding-top: 36px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 32px;
+    gap: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 32px;
+    gap: 50px;
+  }
+}
+
+.price-slider__range-input-wrapper {
+  width: 118px;
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+  }
+}
+
+.noui-target {
+  border: none;
+  height: 4px;
+  max-width: 261px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 304px;
+  }
+}
+
+.noui-base {
+  border: none;
+  height: 4px;
+}
+
+.noui-connects {
+  border: none;
+  height: 4px;
+}
+
+.noui-connect {
+  background-color: #9070ec;
+  height: 4px;
+}
+
+.noui-handle {
+  background: #ffffff;
+  border: 2px solid #9070ec;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    display: none;
+  }
+}

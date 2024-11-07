@@ -1,0 +1,33 @@
+.location__wrapper {
+  background-color: #f8f8f8;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.location__map-wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 38px;
+    background-image: url("../../icons/map-pin.svg");
+    background-size: 38px 50px;
+    background-repeat: no-repeat;
+    top: 44%;
+    left: 156px;
+
+    @media (min-width: $tablet-width) {
+      top: 45%;
+      left: 380px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 50%;
+      left: 50%;
+      translate: -4px -25px;
+    }
+  }
+}

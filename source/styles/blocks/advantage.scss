@@ -1,0 +1,150 @@
+.advantage {
+  padding: 66px 0 32px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 76px 0 0;
+  }
+}
+
+.advantage__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  padding: 0;
+  text-align: center;
+  margin: 0 0 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    margin: 0 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin: 0 0 10px;
+  }
+}
+
+.advantage__description {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  text-align: center;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    max-width: 318px;
+  }
+}
+
+.advantage--speed {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 41%;
+    background-image: url("../../icons/features-speed-icon.svg");
+    background-size: 52px 56px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      top: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 42%;
+    }
+  }
+}
+
+.advantage--convenience {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 41%;
+    background-image: url("../../icons/features-convenience-icon.svg");
+    background-size: 52px 56px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      top: -1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 42%;
+    }
+  }
+}
+
+.advantage--energy {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 41%;
+    background-image: url("../../icons/features-energy-icon.svg");
+    background-size: 52px 56px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      top: -1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 42%;
+    }
+  }
+}
+
+.advantage--ecology {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 41%;
+    background-image: url("../../icons/features-ecology-icon.svg");
+    background-size: 52px 56px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      top: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 42%;
+    }
+  }
+}

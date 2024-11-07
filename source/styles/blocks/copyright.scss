@@ -1,0 +1,61 @@
+.copyright {
+  padding: 20px 36px 30px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 32px 30px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 26px 20px 10px;
+  }
+}
+
+.copyright__wrapper {
+  display: flex;
+  flex-direction: row;
+  color: #bdbdbd;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0;
+  gap: 3px;
+}
+
+
+.copyright__link {
+  position: relative;
+
+  &:hover {
+    color: #7859cf;
+
+    &::after {
+      background-color: #7859cf;
+    }
+  }
+
+  &:active {
+    color: #593cac;
+
+    &::after {
+      background-color: #593cac;
+    }
+  }
+
+  &::after {
+    content: "";
+    background-color: #bdbdbd;
+    width: 12px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    mask-image: url("../../icons/html-academy-logo.svg");
+
+    @media (min-width: $desktop-width) {
+      right: -16px;
+    }
+  }
+}
